@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../../components/navBar/NavBar";
+// import NavBar from "../../../components/navBar/NavBar";
 
-const Parent = () => {
+const ParentForm = () => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-4xl font-extrabold  text-zinc-700 m-5">
           Welcome to Parent Page
@@ -87,4 +87,4 @@ const Parent = () => {
   );
 };
 
-export default Parent;
+export default ParentForm;

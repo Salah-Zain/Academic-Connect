@@ -1,13 +1,15 @@
 import React from "react";
 
-const StudentNav = () => {
+const ParentSectionOne = () => {
   return (
     <div>
       <div className="container w-[100%] flex justify-center items-center">
         <div className="container-wrap max-w-[1440px] w-[100%] flex justify-evenly items-center">
-          <div className="logo w-[10%] m-2 flex items-center justify-center">
+          <div className="logo w-[10%] m-2 flex items-center justify-between">
+            <img src="" alt="" className="w-16 h-16 rounded-full bg-red-500" />
             <img src="" alt="" className="w-16 h-16 rounded-full bg-red-500" />
           </div>
+
           <div className="p-3 bg-slate-500 w-[40%] flex justify-center items-center">
             <h1 className="text-xl font-semibold">
               Kadachira Heigher Secondary School
@@ -19,4 +21,4 @@ const StudentNav = () => {
   );
 };
 
-export default StudentNav;
+export default ParentSectionOne;
