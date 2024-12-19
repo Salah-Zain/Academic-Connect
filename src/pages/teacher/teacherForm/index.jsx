@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../../components/navBar/NavBar";
 
-const Teacher = () => {
+const TeacherForm = () => {
   return (
     <div>
       <NavBar />
@@ -66,4 +66,4 @@ const Teacher = () => {
   );
 };
 
-export default Teacher;
+export default TeacherForm;

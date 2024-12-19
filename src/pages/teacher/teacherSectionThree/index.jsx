@@ -1,8 +1,6 @@
 import React from "react";
-import { digitalCards } from "../../../data";
-import DigitalCards from "../../../core/digitalCards";
 
-const StudentSectionThree = () => {
+const ParentSectionThree = () => {
   return (
     <>
       <div className="container w-[100%] flex justify-center items-center bg-slate-100">
@@ -11,14 +9,7 @@ const StudentSectionThree = () => {
             Lorem ipsum dolor sit amet consectetur.
           </h1>
           <div className="section3 w-[85%] lg:grid  lg:grid-cols-3 ml-40 gap-5 p-10 ">
-            {digitalCards.map((item, index) => (
-              <DigitalCards
-                key={index}
-                img={item.img}
-                title={item.heading}
-                text={item.button}
-              />
-            ))}
+            {st}
           </div>
         </div>
       </div>
@@ -26,4 +17,4 @@ const StudentSectionThree = () => {
   );
 };
 
-export default StudentSectionThree;
+export default ParentSectionThree;

@@ -1,52 +1,28 @@
-import React from 'react'
+import React from "react";
+import { digitalCards } from "../../../data"; // Ensure this points to the correct path
+import DigitalCards from "../../../core/digitalCards"; // Ensure this path is correct
 
 const ParentSectionThree = () => {
   return (
-    <div className="w-[100%] container flex justify-center items-center bg-zinc-700">
-      <div className="container-wrap max-w-[100%] w-[1400px] bg-slate-500">
-        <h1 className="text-center p-5">Grade</h1>
-        <section className="wfull grid grid-cols-1 text-center m-5 gap-5 content-normal sm:grid-cols-2 lg:grid-cols-6">
-          <div className="border rounded-lg p-2">
-            <h1 className="p-2">1st Mid Term</h1>
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-          <div className="border rounded-lg p-2">
-            <h1 className="p-2">1st Term</h1>
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-          <div className="border rounded-lg p-2">
-            <h1 className="p-2">2nd Mid Term</h1>
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-          <div className="border rounded-lg p-2">
-            <h1 className="p-2">2nd Term</h1>
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-          <div className="border rounded-lg p-2">
-            <h1 className="p-2">3rd Mid Term</h1>
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-          <div className=" border rounded-lg p-2 flex-col justify-center">
-            <h1 className="p-2">3rd Term</h1>
-
-            <button className="px-8 py-2 mt-2 text-sm rounded-md border">
-              View →
-            </button>
-          </div>
-        </section>
+    <div className="container w-[100%] flex justify-center items-center bg-slate-100">
+      <div className="container-wrap max-w-[100%] w-[1330px] flex flex-col justify-center items-center">
+        <h1 className="text-center text-3xl font-bold m-5">
+          Lorem ipsum dolor sit amet consectetur.
+        </h1>
+        <div className="section3 w-[85%] lg:grid lg:grid-cols-3 ml-40 gap-5 p-10">
+          {digitalCards &&
+            digitalCards.map((item, i) => (
+              <DigitalCards
+                key={i}
+                img={item.img}
+                title={item.heading}
+                text={item.button}
+              />
+            ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ParentSectionThree
+export default ParentSectionThree;

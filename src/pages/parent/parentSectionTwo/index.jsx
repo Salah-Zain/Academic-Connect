@@ -1,30 +1,28 @@
-import React from 'react'
+import React from "react";
+import StudentDetails from "../../../core/studentDetails";
+import { studentDetails } from "../../../data";
 
-const ParentsectionTwo = () => {
+const ParentSectionTwo = () => {
   return (
-    <div className="container w-[100%] flex justify-center items-center bg-slate-700 ">
-    <div className="container max-w-[100%] w-[1400px]  gap-10 items-center  text-center bg-orange-600 md:flex md:justify-center md:items-center md:flex-wrap">
-      <div className="w-[90%] bg-orange-400 p-2 m-5 md:w-[30%]">
-        <h1>Sudent Details</h1>
-        <div className="list-ntwo p-3 text-start">
-          <li>Sudent Name:</li>
-          <li>Age:</li>
-          <li>Class:</li>
-          <li>Div:</li>
-          <li>Id:</li>
-        </div>
-      </div>
-      <div className="w-[90%] bg-orange-400 p-2 m-5 md:w-[30%]">
-        <h1>Connect with Teacher</h1>
-        <div className="list-none p-3 text-start">
-          <li className="p-2">Chat with Teacher</li>
-          <li className="p-2">Live Session with Teacher</li>
-          <li className="p-2">View Attendence</li>
+    <div className="container w-[100%] flex justify-center items-center">
+      <div className="container max-w-[100%] w-[1300px]  gap-10 items-center  text-center md:flex md:justify-center md:items-center md:flex-wrap">
+        <div className="w-[90%] p-5 m-5 md:w-[60%] list-none rounded-lg grid grid-cols-2  gap-5">
+          {studentDetails.map((item, i) => (
+            <StudentDetails
+              key={i}
+              title={item.title}
+              name={item.name}
+              a={item.s}
+              // subject={item.subject}
+              classn={item.class}
+              div={item.div}
+              id={item.id}
+            />
+          ))}
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ParentsectionTwo
+export default ParentSectionTwo;
