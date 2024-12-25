@@ -8,7 +8,7 @@ const TeacherPage = () => {
     <div>
       <TeacherSectionOne />
       <TeacherSectionTwo />
-      {/* <TeacherSectionThree /> */}
+      <TeacherSectionThree />
     </div>
   );
 };

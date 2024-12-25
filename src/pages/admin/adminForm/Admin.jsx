@@ -1,10 +1,9 @@
 import React from "react";
-import NavBar from "../../components/navBar/NavBar";
-
-const Admin = () => {
+import UsersNav from "../../../core/usersNav/usersNav";
+const AdminForm = () => {
   return (
     <div>
-      <NavBar />
+      <UsersNav />
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-4xl font-extrabold text-slate-700 m-5">
           Welcome to Admin Page
@@ -66,4 +65,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default AdminForm;

@@ -3,11 +3,11 @@ import StudentSectionOne from "./studentSectionOne";
 import StudentSectionTwo from "./studentSectionTwo";
 import StudentSectionThree from "./studentSectionThree";
 
-const StudentPage = ({greeting}) => {
+const StudentPage = ({ greeting }) => {
   return (
     <>
       {/* <StudentForm /> */}
-      <StudentSectionOne greeting={greeting} />
+      <StudentSectionOne />
       <StudentSectionTwo />
       <StudentSectionThree />
     </>

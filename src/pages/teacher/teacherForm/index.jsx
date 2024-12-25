@@ -16,12 +16,12 @@ const TeacherForm = () => {
             <hr />
 
             <label htmlFor="" id="tid">
-              User Id
+              User Name
             </label>
             <input
               className="w-full p-2 m-[5px 0 22px 0] border-none bg-[#f1f1f1] focus:bg-[#ddd] focus:outline-none inline-block"
-              type="number"
-              placeholder="User Id"
+              type="text"
+              placeholder="User Name"
               required
             />
             <hr />
@@ -56,11 +56,11 @@ const TeacherForm = () => {
           </div>
         </form>
 
-        <div className="w-[500px] bg-[#f1f1f1] text-center p-4 rounded">
+        {/* <div className="w-[500px] bg-[#f1f1f1] text-center p-4 rounded">
           <a href="" className="text-blue-600 hover:underline">
             forget Password
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

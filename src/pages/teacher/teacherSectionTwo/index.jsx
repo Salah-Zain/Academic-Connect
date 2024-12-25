@@ -6,7 +6,7 @@ const TeacherSectionTwo = ({ title, name, a, classn, div, id }) => {
   return (
     <div className="container w-[100%] flex justify-center items-center">
       <div className="container max-w-[100%] w-[1300px]  gap-10 items-center  text-center md:flex md:justify-center md:items-center md:flex-wrap">
-        <div className="w-[90%] bg-gray-300 p-2 m-5 md:w-[30%] rounded-lg">
+        <div className="w-[90%] p-5 m-5 md:w-[30%] rounded-lg list-none">
           <Details
             title={"Teacher Details"}
             name={"Teacher Name"}

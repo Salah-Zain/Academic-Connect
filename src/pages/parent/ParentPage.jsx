@@ -1,7 +1,7 @@
-import React from 'react'
-import ParentSectionOne from './parentSectionOne'
-import ParentsectionTwo from './parentSectionTwo'
-import ParentSectionThree from './parentSectionThree'
+import React from "react";
+import ParentSectionOne from "./parentSectionOne";
+import ParentsectionTwo from "./parentSectionTwo";
+import ParentSectionThree from "./parentSectionThree";
 
 const ParentPage = () => {
   return (
@@ -10,7 +10,7 @@ const ParentPage = () => {
       <ParentsectionTwo />
       <ParentSectionThree />
     </div>
-  )
-}
+  );
+};
 
-export default ParentPage
+export default ParentPage;
